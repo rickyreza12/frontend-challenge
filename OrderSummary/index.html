@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Red+Hat+Display:ital,wght@0,300;0,500;0,700;0,900;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-families {
+            font-family: 'Outfit', sans-serif;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+
+        .bg-w-images {
+            background-image: url('./images/pattern-background-desktop.svg');
+        }
+
+        @media (max-width: 375px) {
+            .bg-w-images {
+                background-image: url('./images/pattern-background-mobile.svg');
+            }
+        }
+    </style>
+</head>
+
+<body class="flex w-screen h-screen bg-w-images font-families bg-cover bg-center">
+    <!-- card  -->
+    <div class="bg-white m-auto rounded-xl w-[400px] w-sm-[200px] h-[600px] h-sm-[400] drop-shadow-2xl">
+        <!-- hero -->
+        <img src="./images/illustration-hero.svg" alt="" srcset="" class="object-fit rounded-t-xl">
+        <div class="m-[3em]">
+            <!-- text order  title-->
+            <div class="text-2xl font-bold text-center mb-5">Order Summary</div>
+            <!-- para graf -->
+            <div class="text-center text-gray-500">You can now listen to millions of songs audiobooks and podcast on any
+                device
+                anywere you like!</div>
+            <!-- items  -->
+            <div class="mt-5 m-3 flex gap-5 justify-center items-center">
+                <!-- music  -->
+                <img src="./images/icon-music.svg" alt="" srcset="">
+                <!-- anual plan  -->
+                <div class="font-bold mr-[2em]"> Annual Plan<div class="font-light text-gray-500">$59.99/Year</div>
+                </div>
+                <!-- button change  -->
+                <div class="hover:text-gray-500" role="button">Change</div>
+            </div>
+        </div>
+
+        <!-- button payment  -->
+        <div class="text-center bg-blue-800 mr-[3em] ml-[3em] rounded-lg py-3 text-white hover:bg-indigo-500"
+            role="button">Procced To Payment</div>
+        <!-- cancel order  -->
+        <div class="text-center text-gray-500 font-bold m-[1em] hover:text-blue-800" role="button">Cancel Order</div>
+    </div>
+</body>
+
+</html>
