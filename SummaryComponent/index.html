@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-families {
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+
+        .display-card {
+            display: flex;
+        }
+
+
+        @media (max-width: 600px) {
+            .display-card {
+                display: block;
+            }
+            .gap-summary{
+                gap: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Dekstop  -->
+    <main class="bg-[#ebf1ff] w-screen h-screen flex justify-center items-center">
+        <!-- CARD -->
+        <div class="bg-white rounded-xl display-card drop-shadow-lg">
+            <!-- card 1 -->
+            <div
+                class="w-[300px] h-[400px] rounded-xl flex flex-col gap-2 bg-gradient-to-b from-[#7857ff] to-[#2e2be9]">
+                <!-- score -->
+                <h1 class="text-center text-[#c8c7ff] mt-5 font-normal text-[18px]">Your Result</h1>
+                <div
+                    class="flex flex-col justify-center items-center bg-gradient-to-b to-[#4e21ca] from-[#2421ca] px-10 py-8 rounded-full ml-auto mr-auto mt-auto">
+                    <h2 class="text-center text-5xl text-white">76</h2>
+                    <p class="text-center text-[#c8c7ff]">of 100</p>
+                </div>
+                <!-- text  -->
+                <div class="flex flex-col items-center m-8 gap-5">
+                    <h2 class="text-center text-2xl font-bold text-white">Great</h2>
+                    <p class="text-center text-[#c8c7ff]">You scored higher than 65% of the people who have taken these
+                        tests</p>
+                </div>
+            </div>
+            <!-- Summary  -->
+            <div class="m-5 p-3 flex flex-col justify-between gap-5">
+                <div class="flex flex-col w-full gap-summary">
+                    <h1 class="text-xl font-bold text-[#303b5a]">Summary</h1>
+                    <div class="flex justify-between w-full px-5 bg-red-50 py-2 rounded-lg gap-5">
+                        <div class="flex gap-2 items-center ">
+                            <img src="./assets/images/icon-reaction.svg" alt="" srcset="">
+                            <div class="text-[#ff5757] font-bold "> Reaction</div>
+                        </div>
+                        <div class="text-gray-500 font"><b class="text-black ">80</b> / 100</div>
+                    </div>
+                    <div class="flex w-full px-5 bg-yellow-50 py-2 rounded-lg gap-5  justify-between">
+                        <div class="flex gap-2 items-center ">
+                            <img src="./assets/images/icon-memory.svg" alt="" srcset="">
+                            <div class="text-[#ffb01f] font-bold "> Memory</div>
+                        </div>
+                        <div class="text-gray-500"><b class="text-black ">92</b> / 100</div>
+                    </div>
+                    <div class="flex w-full px-5 bg-green-50 py-2 rounded-lg gap-5  justify-between">
+                        <div class="flex gap-2 items-center">
+                            <img src="./assets/images/icon-verbal.svg" alt="" srcset="">
+                            <p class="text-[#00bd91] font-bold">Verbal</p>
+                        </div>
+                        <div class="text-gray-500"><b class="text-black ">61</b> / 100</div>
+                    </div>
+                    <div class="flex w-full px-5 bg-indigo-50 py-2 rounded-lg gap-5 justify-between">
+                        <div class="flex gap-2 items-center">
+                            <img src="./assets/images/icon-visual.svg" alt="" srcset="">
+                            <p class="text-[#1125d4] font-bold"> Visual</p>
+                        </div>
+                        <div class="text-gray-500"><b class="text-black">72</b> / 100</div>
+                    </div>
+                </div>
+                <!-- continue btn  -->
+                <div class="bg-[#303b5a] text-white py-2 w-full text-center rounded-full hover:bg-gradient-to-b from-[#7857ff] to-[#2e2be9]"
+                    role="button">Continue</div>
+            </div>
+        </div>
+    </main>
+    
+    <footer></footer>
+</body>
+
+</html>
